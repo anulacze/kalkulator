@@ -1,0 +1,63 @@
+html {
+    font-size: 16px;
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.device {
+    width: 500px;
+    margin: 50px auto auto auto;
+}
+
+.display {
+    height: 120px;
+    background: #2e1b38;
+    color: rgb(239, 239, 239);
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+#number-display {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 20px;
+}
+
+.buttons {
+    height: 600px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    color: #0d0b33;
+    overflow: hidden;
+}
+
+.big-button {
+    grid-column: span 2;
+    background-color: #5ba0c4;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid rgb(118, 118, 118);
+    transition: background-color 0.5s linear;
+}
+
+.big-button:hover {
+    background-color: #5290b0;
+}
+
+.big-button:active {
+    background-color: #5ba0c4;
+}
+
+.small-button {
+    font-size: 2rem;
+    transition: background-color 0.5s linear;
+}
